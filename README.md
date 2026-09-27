@@ -25,6 +25,11 @@ It works with OpenClaw, Claude Code, Codex, and other runtimes - it is not part 
 
 ## Start locally
 
+## Ontwikkeltijdlijn
+
+<video src="https://raw.githubusercontent.com/itsdarklikehell/mission-control/master/gource.mp4" controls width="100%"></video>
+
+
 Node.js 22 or newer and pnpm are required for a source install.
 
 ```bash
