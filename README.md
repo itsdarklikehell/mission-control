@@ -309,3 +309,16 @@ the project does not promise dates for unassigned work.
 ## License
 
 [MIT](LICENSE) © 2026 [Builderz Labs](https://github.com/builderz-labs)
+
+## :film_projector: Development visualization
+
+Bekijk de [Gource development video](https://github.com/itsdarklikehell/mission-control/releases) voor een visuele tijdlijn van de projectgeschiedenis.
+
+Om de video lokaal te genereren:
+```bash
+gource -1920x1080 --auto-skip-seconds 1 -o gource.ppm
+ffmpeg -y -r 60 -i gource.ppm -c:v libx264 -preset slow -crf 18 -pix_fmt yuv420p gource.mp4
+```
+
+De GitHub Actions workflow (`.github/workflows/gource.yaml`) genereert de video automatisch bij elke release.
+
